@@ -3,12 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import ligado from "./assets/ligado.png"
+import desligado from "./assets/desligado.png"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [lampada, setLampada] = useState(desligado)
 
   return (
-   <div></div>
+   <div>
+    <button type='button' onClick={() => setLampada(ligado)}>ligar</button>
+    <img src={lampada} id='lampada'/>
+    <button type='button' onClick={() => setLampada(desligado)}>desligar</button>
+   </div>
   )
 }
 
