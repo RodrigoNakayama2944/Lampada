@@ -183,6 +183,10 @@
   }
 }
 
+#div-prin {
+  height: 100vh;
+}
+
 #lampada {
   height: 200px;
   width: 200px;

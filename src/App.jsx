@@ -10,7 +10,7 @@ function App() {
   const [lampada, setLampada] = useState(desligado)
 
   return (
-   <div>
+   <div id='div-prin'>
     <button type='button' onClick={() => setLampada(ligado)}>ligar</button>
     <img src={lampada} id='lampada'/>
     <button type='button' onClick={() => setLampada(desligado)}>desligar</button>
